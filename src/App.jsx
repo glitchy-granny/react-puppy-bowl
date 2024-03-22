@@ -52,11 +52,11 @@ const testPlayer = {
   cohortId: 13,
 };
 
-function PlayerCard() {
+function PlayerCard({ name, imageUrl }) {
   return (
     <div className="player-container">
-      <p className="player-name">{testPlayer.name}</p>
-      <img className="player-img" src={testPlayer.imageUrl}></img>
+      <p className="player-name">{name}</p>
+      <img className="player-img" src={imageUrl}></img>
       <button>DETAILS</button>
       <button>DELETE</button>
     </div>
@@ -67,7 +67,10 @@ function App() {
   return (
     <>
       <h1>Hello World!</h1>
-      <PlayerCard />
+      <PlayerCard name="Bo" imageUrl={testPlayer.imageUrl} />
+      <PlayerCard name="JJ" imageUrl={testPlayer.imageUrl} />
+      <PlayerCard name="Kip" imageUrl={testPlayer.imageUrl} />
+      <PlayerCard name="Dog" imageUrl={testPlayer.imageUrl} />
     </>
   );
 }
