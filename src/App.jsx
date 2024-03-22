@@ -51,19 +51,23 @@ const testPlayer = {
   teamId: 25,
   cohortId: 13,
 };
+
+function PlayerCard() {
+  return (
+    <div className="player-container">
+      <p className="player-name">{testPlayer.name}</p>
+      <img className="player-img" src={testPlayer.imageUrl}></img>
+      <button>DETAILS</button>
+      <button>DELETE</button>
+    </div>
+  );
+}
+
 function App() {
   return (
     <>
       <h1>Hello World!</h1>
-      <div className="player-container">
-        <p className="player-name">Huck</p>
-        <img
-          className="player-img"
-          src="http://r.ddmcdn.com/w_962/s_f/o_1/cx_25/cy_0/cw_962/ch_1443/APL/uploads/2019/12/Huck-PBXVI.jpg"
-        ></img>
-        <button>DETAILS</button>
-        <button>DELETE</button>
-      </div>
+      <PlayerCard />
     </>
   );
 }
