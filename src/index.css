@@ -4,15 +4,6 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --blue-text: #083c61; /* Centralized color variable for text */
-  --blue-light-bg: #e7f2fa; /* Centralized color variable for light background */
-  --blue-primary: #007bff; /* Centralized color variable for primary elements */
-  --blue-dark: #0056b3; /* Centralized color variable for darker elements */
-  --blue-hover: #005ec2; /* Centralized color variable for hover state */
 }
 
 * {
@@ -29,8 +20,6 @@ body {
   align-items: center; /* Align for vertical centering */
   justify-content: center; /* Align for horizontal centering */
   flex-direction: column; /* Stack items vertically */
-  background-color: var(--blue-light-bg);
-  color: var(--blue-text);
 }
 
 /* Link styles */
